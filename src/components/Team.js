@@ -6,16 +6,15 @@ export default function Team({ teamHeadline, teamMembers }) {
   const [showTeam, setShowTeam] = useState(false)
   return (
     <TeamContainer showTeam={showTeam}>
-      <h3 onClick={openTeam}>
-        <img src={arrow} />
-        {teamHeadline}
-      </h3>
+      <img src={arrow} />
+
+      <h3 onClick={openTeam}>{teamHeadline}</h3>
       {showTeam ? (
-        <section>
+        <TeamSection>
           {teamMembers.map((member) => (
             <TeamMember>{member}</TeamMember>
           ))}
-        </section>
+        </TeamSection>
       ) : (
         ''
       )}
@@ -28,16 +27,12 @@ export default function Team({ teamHeadline, teamMembers }) {
 }
 
 const TeamContainer = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  width: 375px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
 
   img {
-    position: absolute;
-    left: 30%;
+    justify-self: end;
+    align-self: center;
     width: 15px;
     height: 15px;
     margin: 0 10px;
@@ -46,9 +41,17 @@ const TeamContainer = styled.section`
   }
 
   h3 {
+    justify-self: start;
     font-weight: 500;
-    text-align: start;
   }
+`
+
+const TeamSection = styled.div`
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `
 
 const TeamMember = styled.div`

@@ -59,22 +59,32 @@ const StyledNavigation = styled.nav`
   }
 
   li {
-    border: 2px solid hotpink;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background: #ff69b4;
+    box-shadow: 5px 5px 10px #d95999, -5px -5px 10px #ff79cf;
     list-style: none;
-    padding: 8px;
+
+    .selected {
+      border-radius: 5px;
+      background: #ff69b4;
+      box-shadow: inset 5px 5px 10px #d95999, inset -5px -5px 10px #ff79cf;
+    }
   }
 
   a {
-    width: 50px;
-    height: 50px;
     text-decoration: none;
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: var(--seashell);
+    font-size: 0.9rem;
   }
 
   img {
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
+    margin-top: 2px;
   }
 `

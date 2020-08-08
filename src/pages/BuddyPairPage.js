@@ -5,13 +5,13 @@ import Navigation from '../components/Navigation'
 
 export default function BuddyPairPage() {
   return (
-    <>
+    <main>
       <Header titleText="Buddy Pairs" />
       <BuddyPair buddyOne="Han Solo" buddyTwo="Chewbacca" />
       <BuddyPair buddyOne="Bonnie" buddyTwo="Clyde" />
       <BuddyPair buddyOne="Elwood" buddyTwo="Jake Blues" />
       <BuddyPair buddyOne="Thelma" buddyTwo="Louise" />
       <Navigation />
-    </>
+    </main>
   )
 }

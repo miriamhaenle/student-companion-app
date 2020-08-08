@@ -15,9 +15,10 @@ const BuddyContainer = styled.section`
   position: relative;
   display: flex;
   height: 160px;
+  width: 375px;
   flex-direction: column;
   align-items: center;
-  margin: 50px 0;
+  margin: 50px auto;
 `
 
 const CodyBuddy = styled.div`

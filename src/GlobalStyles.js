@@ -19,6 +19,7 @@ body {
   color: var(--seashell);
   margin: 0;
   background: var(--hotpink);
+  font-weight: 300;
   
 }
 

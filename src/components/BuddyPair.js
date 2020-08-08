@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export default function BuddyPair() {
+export default function BuddyPair({ buddyOne, buddyTwo }) {
   return (
     <BuddyContainer>
-      <CodyBuddy>Jan</CodyBuddy>
+      <CodyBuddy>{buddyOne}</CodyBuddy>
       <PlusIcon>+</PlusIcon>
-      <CodyBuddy>Lene</CodyBuddy>
+      <CodyBuddy>{buddyTwo}</CodyBuddy>
     </BuddyContainer>
   )
 }
@@ -22,14 +22,15 @@ const BuddyContainer = styled.section`
 
 const CodyBuddy = styled.div`
   height: 80px;
-  width: 200px;
-  background: hotpink;
+  width: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 20px;
-  border-radius: 5px;
   margin: 2px 0;
+  border-radius: 5px;
+  background: linear-gradient(145deg, #e65fa2, #ff70c1);
+  box-shadow: 10px 10px 20px #d95999, -10px -10px 20px #ff79cf;
 `
 
 const PlusIcon = styled.div`
@@ -38,12 +39,12 @@ const PlusIcon = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
-  border: 2px dotted white;
-  background: hotpink;
-  color: white;
   font-size: 70px;
   position: absolute;
   top: 35%;
   left: 44%;
+  color: var(--hotpink);
+  border-radius: 50px;
+  background: #f7ebe8;
+  box-shadow: inset 7px 7px 13px #d2c8c5, inset -7px -7px 13px #ffffff;
 `

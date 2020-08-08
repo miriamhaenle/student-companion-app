@@ -16,7 +16,7 @@ export default createGlobalStyle`
 
 body {
   font-family: 'Raleway', sans-serif;
-  color: var(--raisinblack);
+  color: var(--seashell);
   margin: 0;
   background: var(--hotpink);
   

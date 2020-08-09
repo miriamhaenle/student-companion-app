@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import arrow from '../assets/down-arrow.svg'
 
-export default function Team({ teamHeadline, teamMembers }) {
-  const [showTeam, setShowTeam] = useState(false)
+export default function Team({ teamHeadline, teamMembers, showTeamStatus }) {
+  const [showTeam, setShowTeam] = useState(false || showTeamStatus)
   return (
     <TeamContainer showTeam={showTeam}>
       <img src={arrow} />
@@ -12,7 +12,7 @@ export default function Team({ teamHeadline, teamMembers }) {
       {showTeam ? (
         <TeamSection>
           {teamMembers.map((member) => (
-            <TeamMember>{member}</TeamMember>
+            <TeamMember key={member}>{member}</TeamMember>
           ))}
         </TeamSection>
       ) : (

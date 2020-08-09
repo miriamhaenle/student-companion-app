@@ -8,7 +8,7 @@ import StarRating from './StarRating'
 export default function Form() {
   return (
     <StyledForm onSubmit={handleSubmit}>
-      <StarRating></StarRating>
+      <StarRating headline="Rate your day" editable={true} />
       <AverageEnergyLevel averageEnergy="75%" />
       <DailyJournal></DailyJournal>
       <Button text="Submit" />
@@ -16,7 +16,7 @@ export default function Form() {
   )
 
   function handleSubmit(event) {
-    event.prevent.Default()
+    event.preventDefault()
   }
 }
 

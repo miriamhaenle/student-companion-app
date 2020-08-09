@@ -7,7 +7,8 @@ import styled from 'styled-components'
 export default function BuddyPairPage() {
   return (
     <PageContainer>
-      <Header titleText="Buddy Pairs" />
+      <Header titleText="Code Buddies" />
+      <h2>{new Date().toDateString()}</h2>
       <BuddyPair buddyOne="Han Solo" buddyTwo="Chewbacca" />
       <BuddyPair buddyOne="Bonnie" buddyTwo="Clyde" />
       <BuddyPair buddyOne="Elwood" buddyTwo="Jake Blues" />
@@ -19,6 +20,9 @@ export default function BuddyPairPage() {
 
 const PageContainer = styled.main`
   overflow: scroll;
+  h2 {
+    text-align: center;
+  }
   ::after {
     display: block;
     height: 100px;

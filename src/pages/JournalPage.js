@@ -7,7 +7,7 @@ import styled from 'styled-components'
 export default function JournalPage() {
   return (
     <PageContainer>
-      <Header titleText="Journal Page" />
+      <Header titleText="Daily Journal" />
       <Form />
 
       <Navigation />

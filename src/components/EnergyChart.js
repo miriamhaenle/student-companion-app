@@ -6,7 +6,7 @@ export default function EnergyChart() {
   return (
     <ChartContainer>
       <Chart
-        width={400}
+        width={350}
         height={300}
         chartType="ColumnChart"
         loader={<div>Loading Chart</div>}

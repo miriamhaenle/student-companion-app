@@ -7,10 +7,24 @@ import EnergyChart from '../components/EnergyChart'
 
 export default function EnergyPage() {
   return (
-    <main>
+    <PageContainer>
       <Header titleText="Energy" />
       <EnergyChart />
+      <Button text="25%" />
+      <Button text="50%" />
+      <Button text="75%" />
+      <Button text="100%" />
+
       <Navigation />
-    </main>
+    </PageContainer>
   )
 }
+
+const PageContainer = styled.main`
+  overflow: scroll;
+  ::after {
+    display: block;
+    height: 100px;
+    content: '';
+  }
+`

@@ -6,7 +6,7 @@ export default function Button({ text }) {
 }
 
 const StyledButton = styled.button`
-  margin: 30px;
+  margin: 10px;
   width: 150px;
   height: 50px;
   color: var(--seashell);

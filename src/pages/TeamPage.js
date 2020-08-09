@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../components/Header'
 import Navigation from '../components/Navigation'
 import Team from '../components/Team'
+import styled from 'styled-components'
 
 export default function TeamPage() {
   const teamOne = ['Mariuccia', 'Svenja', 'Franci', 'Miriam']
@@ -9,13 +10,22 @@ export default function TeamPage() {
   const teamThree = ['Dajana', 'Paul', 'Anna', 'Kathrin']
 
   return (
-    <main>
+    <PageContainer>
       <Header titleText="Teams" />
       <Team teamHeadline="Firefighters" teamMembers={teamOne} />
       <Team teamHeadline="DevGirls" teamMembers={teamTwo} />
       <Team teamHeadline="Rainbowhead" teamMembers={teamThree} />
 
       <Navigation />
-    </main>
+    </PageContainer>
   )
 }
+
+const PageContainer = styled.main`
+  overflow: scroll;
+  ::after {
+    display: block;
+    height: 100px;
+    content: '';
+  }
+`

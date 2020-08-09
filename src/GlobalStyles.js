@@ -10,7 +10,7 @@ export default createGlobalStyle`
   --lightsalmon: #FFA987;
   --seashell: #F7EBE8;
   --yet: #444140;
-  --raisinblack: #1E1E24;
+  --chocolateblack: #231C07;
 
 }
 

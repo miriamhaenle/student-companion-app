@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
-import StarRating from './StarRating'
-import DailyJournal from './DailyJournal'
-import Button from './Button'
 import AverageEnergyLevel from './AverageEnergyLevel'
+import Button from './Button'
+import DailyJournal from './DailyJournal'
+import StarRating from './StarRating'
 
 export default function Form() {
   return (

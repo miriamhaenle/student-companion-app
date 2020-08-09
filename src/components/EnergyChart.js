@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Chart from 'react-google-charts'
 
-export default function EnergyChart() {
+export default function EnergyChart({ number }) {
   return (
     <ChartContainer>
       <Chart
@@ -14,7 +14,7 @@ export default function EnergyChart() {
           ['Energy Level', 'Me', 'Others'],
           ['Mon', 100, 25],
           ['Tue', 50, 50],
-          ['Wed', 75, 100],
+          ['Wed', number || 25, 100],
           ['Thu', 25, 25],
           ['Fri', 75, 100],
         ]}
@@ -27,6 +27,7 @@ export default function EnergyChart() {
             color: '#F7EBE8',
           },
           legend: { position: 'bottom' },
+          animation: { duration: 1000, easing: 'inAndOut', startup: true },
         }}
       />
     </ChartContainer>

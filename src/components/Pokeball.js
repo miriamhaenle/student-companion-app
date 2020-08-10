@@ -17,8 +17,8 @@ const AnimatedPokeball = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 50px;
-  width: 50px;
+  height: 47.25px;
+  width: 47.25px;
   background: rgb(255, 105, 180);
   background: linear-gradient(
     124deg,

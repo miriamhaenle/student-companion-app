@@ -17,13 +17,13 @@ export default function DashboardPage() {
       <Header titleText="Dashboard" />
       <h2>Your code buddy</h2>
       <BuddyPair buddyOne="Han Solo" buddyTwo="Chewbacca" />
+
       <h2>Your team</h2>
       <Team
         teamHeadline="Firefighters"
         teamMembers={teamOne}
         showTeamStatus="true"
       />
-      <Pokeball />
 
       <h2>Daily rating yesterday</h2>
       <StarRating editable={false} value="5" />

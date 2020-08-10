@@ -12,14 +12,13 @@ export default function Pokemon() {
 }
 
 const AnimatedPokeball = styled.div`
-  margin: 10px auto;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 200px;
-  width: 200px;
+  height: 50px;
+  width: 50px;
   background: rgb(255, 105, 180);
   background: linear-gradient(
     124deg,
@@ -49,7 +48,7 @@ const AnimatedPokeball = styled.div`
       position: absolute;
       top: calc(50% - 5px);
       width: 100%;
-      height: 10px;
+      height: 2px;
       background: #000;
     }
   }
@@ -82,16 +81,16 @@ const AnimatedPokeBallInner = styled.div`
   align-items: center;
   position: absolute;
   background: white;
-  height: 60px;
-  width: 60px;
+  height: 14px;
+  width: 14px;
   border-radius: 50%;
-  border: 10px solid black;
+  border: 1px solid black;
   z-index: 10;
 `
 
 const PokeballPkm = styled.div`
-  width: 30px;
-  height: 30px;
+  width: 7px;
+  height: 7px;
   background: lightgray;
   border-radius: 50%;
   animation: blink 0.5s alternate 7;

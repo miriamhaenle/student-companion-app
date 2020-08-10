@@ -7,7 +7,7 @@ import styled from 'styled-components'
 export default function TeamPage() {
   const teamOne = ['Mariuccia', 'Svenja', 'Franci', 'Miriam']
   const teamTwo = ['Stephanie', 'Annette', 'Sina', 'Sylvia']
-  const teamThree = ['Dajana', 'Paul', 'Anna', 'Kathrin']
+  const teamThree = ['Dajana', 'Paul', 'Anna', 'Kathrin', 'Martin']
 
   return (
     <PageContainer>

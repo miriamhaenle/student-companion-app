@@ -6,9 +6,8 @@ export default function JournalCard() {
     <StyledCard>
       <h3>What a day!</h3>
       <p>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-        voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+        Danke an Jerry, Andreas, Lene, Janny G., Robby J., Joe und Pierce für
+        die tolle Unterstüzung durch die Auf und Abs des Bootcamps!
       </p>
     </StyledCard>
   )

@@ -6,7 +6,7 @@ export default function Team({ teamHeadline, teamMembers, showTeamStatus }) {
   const [showTeam, setShowTeam] = useState(false || showTeamStatus)
   return (
     <TeamContainer showTeam={showTeam}>
-      <img src={arrow} />
+      <img src={arrow} alt="" />
 
       <h3 onClick={openTeam}>{teamHeadline}</h3>
       {showTeam ? (

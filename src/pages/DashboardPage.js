@@ -7,6 +7,7 @@ import Team from '../components/Team'
 import StarRating from '../components/StarRating'
 import WeekEnergyChart from '../components/WeekEnergyChart'
 import JournalCard from '../components/JournalCard'
+import Pokeball from '../components/Pokeball'
 
 export default function DashboardPage() {
   const teamOne = ['Mariuccia', 'Svenja', 'Franci', 'Miriam']
@@ -22,8 +23,10 @@ export default function DashboardPage() {
         teamMembers={teamOne}
         showTeamStatus="true"
       />
+      <Pokeball />
+
       <h2>Daily rating yesterday</h2>
-      <StarRating editable={false} />
+      <StarRating editable={false} value="5" />
       <h2>This weeks energy</h2>
       <WeekEnergyChart />
       <h2>Yesterdays journal</h2>

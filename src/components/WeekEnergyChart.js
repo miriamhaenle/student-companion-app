@@ -3,13 +3,6 @@ import styled from 'styled-components'
 import Chart from 'react-google-charts'
 
 export default function WeekEnergyChart() {
-  var options = {
-    width: 600,
-    height: 400,
-    legend: { position: 'top', maxLines: 3 },
-    bar: { groupWidth: '75%' },
-    isStacked: true,
-  }
   return (
     <ChartContainer>
       <Chart

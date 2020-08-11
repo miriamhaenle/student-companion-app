@@ -33,7 +33,7 @@ export default function DashboardPage() {
         showTeamStatus="true"
       />
 
-      <h2>Daily rating yesterday</h2>
+      <h2>Camp rating</h2>
       <StarRating editable={false} value="5" />
       <h2>This weeks energy</h2>
       <WeekEnergyChart />
@@ -48,6 +48,10 @@ export default function DashboardPage() {
 const PageContainer = styled.main`
   overflow: scroll;
   text-align: center;
+
+  h2 {
+    margin: 25px 0 10px;
+  }
 
   ::after {
     display: block;

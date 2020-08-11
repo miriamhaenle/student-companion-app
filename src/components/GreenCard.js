@@ -5,7 +5,7 @@ export default function GreenCard() {
   return (
     <StyledCard>
       <h3>PS:</h3>
-      <p>Leider gibt's für die App noch keine Tests!</p>
+      <p>Sorry, Andreas! Leider gibt's für die App noch keine Tests!</p>
     </StyledCard>
   )
 }

@@ -17,7 +17,7 @@ export default function DashboardPage() {
     'Jan R.',
     'Jan G.',
     'Joe',
-    'Pierce',
+    'Piers',
   ]
 
   return (

@@ -5,27 +5,27 @@ import Team from '../components/Team'
 import styled from 'styled-components'
 
 export default function TeamPage() {
-  const teamOne = ['Mariuccia', 'Svenja', 'Franci', 'Miriam']
-  const teamTwo = ['Stephanie', 'Annette', 'Sina', 'Sylvia']
-  const teamThree = ['Dajana', 'Paul', 'Anna', 'Kathrin', 'Martin']
-  const teamFour = [
+  const teamOne = [
     'Jerry',
     'Andreas',
     'Lene',
     'Jan R.',
     'Jan G.',
     'Joe',
-    'Pierce',
+    'Piers',
   ]
+  const teamTwo = ['Mariuccia', 'Svenja', 'Franci', 'Miriam']
+  const teamThree = ['Stephanie', 'Annette', 'Sina', 'Sylvia']
+  const teamFour = ['Dajana', 'Paul', 'Anna', 'Kathrin', 'Martin']
 
   return (
     <PageContainer>
       <Header titleText="Teams" />
-      <Team teamHeadline="Coaches" teamMembers={teamFour} />
+      <Team teamHeadline="Coaches" teamMembers={teamOne} />
 
-      <Team teamHeadline="Firefighters" teamMembers={teamOne} />
-      <Team teamHeadline="DevGirls" teamMembers={teamTwo} />
-      <Team teamHeadline="Rainbowhead" teamMembers={teamThree} />
+      <Team teamHeadline="Firefighters" teamMembers={teamTwo} />
+      <Team teamHeadline="DevGirls" teamMembers={teamThree} />
+      <Team teamHeadline="Rainbowhead" teamMembers={teamFour} />
 
       <Navigation />
     </PageContainer>

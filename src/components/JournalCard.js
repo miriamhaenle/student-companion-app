@@ -4,10 +4,11 @@ import styled from 'styled-components'
 export default function JournalCard() {
   return (
     <StyledCard>
-      <h3>What a day!</h3>
+      <h3>Thank you!</h3>
       <p>
         Danke an Jerry, Andreas, Lene, Janny G., Robby J., Joe und Pierce für
-        die tolle Unterstüzung durch die Auf und Abs des Bootcamps!
+        die tolle Unterstüzung durch die Auf und Abs des Bootcamps! Ps: Leider
+        gibt's für die App noch keine Tests!
       </p>
     </StyledCard>
   )

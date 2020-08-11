@@ -7,20 +7,28 @@ import Team from '../components/Team'
 import StarRating from '../components/StarRating'
 import WeekEnergyChart from '../components/WeekEnergyChart'
 import JournalCard from '../components/JournalCard'
-import Pokeball from '../components/Pokeball'
+import GreenCard from '../components/GreenCard'
 
 export default function DashboardPage() {
-  const teamOne = ['Mariuccia', 'Svenja', 'Franci', 'Miriam']
+  const teamOne = [
+    'Jerry',
+    'Andreas',
+    'Lene',
+    'Jan R.',
+    'Jan G.',
+    'Joe',
+    'Pierce',
+  ]
 
   return (
     <PageContainer>
       <Header titleText="Dashboard" />
       <h2>Your code buddy</h2>
-      <BuddyPair buddyOne="Han Solo" buddyTwo="Chewbacca" />
+      <BuddyPair buddyOne="Frustration" buddyTwo="Euphoria" />
 
       <h2>Your team</h2>
       <Team
-        teamHeadline="Firefighters"
+        teamHeadline="Coaches"
         teamMembers={teamOne}
         showTeamStatus="true"
       />
@@ -29,8 +37,9 @@ export default function DashboardPage() {
       <StarRating editable={false} value="5" />
       <h2>This weeks energy</h2>
       <WeekEnergyChart />
-      <h2>Yesterdays journal</h2>
+      <h2>Camp journal</h2>
       <JournalCard />
+      <GreenCard />
       <Navigation />
     </PageContainer>
   )

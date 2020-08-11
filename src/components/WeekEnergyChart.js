@@ -12,11 +12,11 @@ export default function WeekEnergyChart() {
         loader={<div>Loading Chart</div>}
         data={[
           ['Energy Level', 'Me', 'Others'],
-          ['Mon', 75, 25],
+          ['Mon', 25, 75],
           ['Tue', 50, 50],
-          ['Wed', 25, 75],
-          ['Thu', 25, 75],
-          ['Fri', 75, 25],
+          ['Wed', 100, 0],
+          ['Thu', 0, 0],
+          ['Fri', 0, 0],
         ]}
         options={{
           title: 'Energy Level',

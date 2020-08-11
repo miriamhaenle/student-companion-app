@@ -8,10 +8,21 @@ export default function TeamPage() {
   const teamOne = ['Mariuccia', 'Svenja', 'Franci', 'Miriam']
   const teamTwo = ['Stephanie', 'Annette', 'Sina', 'Sylvia']
   const teamThree = ['Dajana', 'Paul', 'Anna', 'Kathrin', 'Martin']
+  const teamFour = [
+    'Jerry',
+    'Andreas',
+    'Lene',
+    'Jan R.',
+    'Jan G.',
+    'Joe',
+    'Pierce',
+  ]
 
   return (
     <PageContainer>
       <Header titleText="Teams" />
+      <Team teamHeadline="Coaches" teamMembers={teamFour} />
+
       <Team teamHeadline="Firefighters" teamMembers={teamOne} />
       <Team teamHeadline="DevGirls" teamMembers={teamTwo} />
       <Team teamHeadline="Rainbowhead" teamMembers={teamThree} />

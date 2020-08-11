@@ -6,8 +6,8 @@ export default function JournalCard() {
     <StyledCard>
       <h3>Thank you!</h3>
       <p>
-        Danke an Jerry, Andreas, Lene, Janny G., Robby J., Joe und Pierce für
-        die tolle Unterstüzung durch die Auf und Abs des Bootcamps!
+        Danke an Jerry, Andreas, Lene, Janny G., Robby J., Joe und Piers für die
+        tolle Unterstüzung durch die Auf und Abs des Bootcamps!
       </p>
     </StyledCard>
   )

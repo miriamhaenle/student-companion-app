@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was a prototype of the student companion app as farewell present to our amazing neuefische coaching team!
 
 ## Available Scripts
 
